@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,12 +39,13 @@
             colors: {
               clifford: "#da373d",
               "btn-primary": "#ABEF5F",
-              "sub-btn-clr": "#E5F3D6",
+              "sub-btn-clr": "#D3F6AD",
               "bg-concept": "#E7C1D3",
               "bg-Design-Process": "#EFDA6E",
               "bg-supervision": "#A4DAC3",
               "bgc-Budget-Planning": "#77AAEA",
               "text-clr": "#737373",
+              "text-cl2": "#494949",
               "home-clr": "#1F2937",
             },
           },
@@ -107,11 +108,16 @@
               <i class="fa-solid fa-cart-shopping"></i>
             </div>
             <button
-              class="btn bg-btn-primary rounded-full px-5 py-[10px] text-xl font-extrabold"
+              class="btn bg-btn-primary rounded-full px-5 py-2 text-xl font-extrabold"
             >
-              Book Consult<i
-                class="fa-solid fa-arrow-up rotate-45 w-[11px]"
-              ></i>
+              Book Consult
+              <div
+                class="w-8 h-8 rounded-full bg-black flex items-center justify-center pr-1"
+              >
+                <i
+                  class="fa-solid fa-arrow-up text-white rotate-45 w-[11px]"
+                ></i>
+              </div>
             </button>
             <!-- <a class="btn bg-btn-primary">Button</a>
             <i class="fa-solid fa-arrow-up"></i> -->
@@ -152,6 +158,42 @@
         </div>
       </nav>
       <!-- Navbar End -->
+      <!-- Hero section -->
+      <div class="px-5 py-10 mt-10">
+        <div class="hero space-y-4">
+          <div class="hero-content flex-col">
+            <!-- Hero images -->
+            <div>
+              <img src="./assets/banner.png" class="max-w-sm rounded-lg" />
+            </div>
+            <!-- Hero content -->
+            <div class="flex flex-col justify-center sm:items-center sm:px-11">
+              <h1
+                class="text-3xl font-extrabold text-center px-5 lg:text-6xl lg:leading-[70px] lg:px-0"
+              >
+                A barn house of this design has a striking appearance
+              </h1>
+              <p class="py-6 text-center text-text-cl2 px-2 lg:px-20">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <button
+                class="btn bg-sub-btn-clr text-xl font-bold rounded-full py-2 flex items-center sm:py-2 sm:px-6"
+              >
+                Get Started
+                <div
+                  class="w-8 h-8 rounded-full bg-btn-primary flex items-center justify-center pr-1"
+                >
+                  <i class="fa-solid fa-arrow-up rotate-45 w-[11px]"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Hero section -->
     </header>
     <!-- End of Header Section -->
     <!-- This is a Main Section -->
