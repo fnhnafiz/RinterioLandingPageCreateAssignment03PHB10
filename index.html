@@ -32,6 +32,17 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
+    <style>
+      .info-box {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        transform: translateY(40px);
+      }
+      .relative:hover .info-box {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -544,7 +555,93 @@
       </section>
       <!--End of Portpholio Section -->
       <!-- My Creative Section -->
-      <section class="hidden"></section>
+      <section class="bg-[#F4F4F4] my-10 py-10 px-5">
+        <div class="container mx-auto">
+          <div class="text-center mb-4">
+            <button class="btn btn-ghost bg-sub-btn-clr rounded-full px-4 py-2">
+              <i class="fa-solid fa-arrow-right"></i
+              ><span class="font-bold text-text-clr-2"
+                >Click See All Agents</span
+              >
+            </button>
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-center font-extrabold text-2xl px-10 md:text-4xl">
+              Meet Our Trustable Agents Team
+            </h3>
+            <p class="text-text-clr font-medium text-center">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              aperiam nulla quas nostrum commodi error nemo sapiente delectus
+              aut excepturi!
+            </p>
+          </div>
+          <!-- Agent Images -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10"
+          >
+            <!-- img 1 -->
+            <div class="relative flex flex-col items-center justify-center">
+              <img class="rounded-xl" src="./assets/Professional1.jpg" alt="" />
+              <div
+                class="info-box space-y-2 absolute bottom-2 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
+              >
+                <div>
+                  <h1 class="font-bold text-black text-xl">Ethan Harper</h1>
+                  <p class="font-semibold text-gray-500">Property Specialist</p>
+                </div>
+                <button
+                  class="px-3 btn bg-btn-primary py-2 rounded-lg bg-blue-500 text-black font-bold text-lg border-none"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <!-- img2 -->
+            <div class="relative flex flex-col items-center justify-center">
+              <img class="rounded-xl" src="./assets/Professional2.jpg" alt="" />
+              <div
+                class="info-box space-y-2 absolute bottom-2 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
+              >
+                <div>
+                  <h1 class="font-bold text-black text-xl">Olivia Mitchell</h1>
+                  <p class="font-semibold text-gray-500">
+                    Luxury Property Consultant
+                  </p>
+                </div>
+                <button
+                  class="px-3 btn bg-btn-primary py-2 rounded-lg bg-blue-500 text-black font-bold text-lg border-none"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <!-- img 3 -->
+            <div class="relative flex flex-col items-center justify-center">
+              <img class="rounded-xl" src="./assets/Professional3.jpg" alt="" />
+              <div
+                class="info-box space-y-2 absolute bottom-2 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
+              >
+                <div>
+                  <h1 class="font-bold text-black text-xl">Mason Scott</h1>
+                  <p class="font-semibold text-gray-500">
+                    Residential Sales Expert
+                  </p>
+                </div>
+                <button
+                  class="px-3 btn bg-btn-primary py-2 rounded-lg bg-blue-500 text-black font-bold text-lg border-none"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <!-- img 4
+            <div class="">
+              <img src="./assets/Professional4 .jpg" alt="" />
+            </div> -->
+          </div>
+          <!--End Agent Images -->
+        </div>
+      </section>
       <!--End of My Creative Section -->
       <!-- Lets Discuss Section -->
       <section
