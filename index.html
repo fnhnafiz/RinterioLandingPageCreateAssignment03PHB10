@@ -31,14 +31,12 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
-    </style>
-    <style>
-      .info-box {
+      .agent-photo {
         opacity: 0;
         transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
         transform: translateY(40px);
       }
-      .relative:hover .info-box {
+      .relative:hover .agent-photo {
         opacity: 1;
         transform: translateY(0);
       }
@@ -190,11 +188,14 @@
                 >
                   A barn house of this design has a striking appearance
                 </h1>
-                <p class="py-6 text-center text-text-cl2 px-2 lg:px-32">
-                  The barn house captivates with its blend of rustic charm and
-                  modern sophistication, featuring weathered wood, sleek metal
-                  accents, and large windows that flood the space with natural
-                  light.
+                <p class="py-6 text-center text-text-cl2 lg:px-32">
+                  Nestled in the countryside, this barn house design offers a
+                  perfect blend of rustic charm and modern elegance. The
+                  striking appearance of the structure is defined by its clean
+                  lines, expansive windows, and the warm, natural tones of
+                  reclaimed wood. The spacious open-plan interior brings in an
+                  abundance of natural light, creating a serene and inviting
+                  atmosphere.
                 </p>
                 <button
                   class="btn bg-sub-btn-clr text-xl font-bold rounded-full py-2 flex items-center sm:py-2 sm:px-6"
@@ -229,8 +230,13 @@
           <div
             class="flex flex-col-reverse gap-9 md:flex-col-reverse lg:flex-row-reverse"
           >
+            <!-- About Images -->
             <div class="flex-1">
-              <img src="./assets/Rectangle.png" class="w-full rounded-lg" />
+              <img
+                class="h-full object-cover rounded-lg"
+                src="./assets/Rectangle.png"
+                class="w-full rounded-lg"
+              />
             </div>
             <!-- about content -->
             <div class="flex-1">
@@ -252,9 +258,10 @@
                 <p
                   class="py-4 text-center text-text-cl2 px-8 lg:px-0 lg:text-left lg:pr-24"
                 >
-                  The barn house captivates with its blend of rustic charm and
-                  modern sophistication, featuring weathered wood, sleek metal
-                  accents.
+                  At our core, we focus on creating spaces that blend
+                  functionality with aesthetic appeal. Each project is crafted
+                  with care, ensuring that every detail contributes to a
+                  comfortable and harmonious living environment.
                 </p>
               </div>
               <!-- </div> -->
@@ -270,8 +277,8 @@
                   <div class="space-y-5">
                     <h3 class="font-extrabold">Commercial</h3>
                     <p class="text-text-clr">
-                      The barn house captivates with its blend of rustic charm
-                      and modern.
+                      Our commercial projects are designed to enhance
+                      productivity and elevate the customer experience.
                     </p>
                   </div>
                 </div>
@@ -284,8 +291,9 @@
                   <div class="space-y-5">
                     <h3 class="font-extrabold">Residential</h3>
                     <p class="text-text-clr">
-                      The barn house captivates with its blend of rustic charm
-                      and modern.
+                      Our residential designs create personalized, comfortable
+                      homes that reflect your unique lifestyle and offer
+                      enduring quality.
                     </p>
                   </div>
                 </div>
@@ -299,7 +307,7 @@
       </section>
       <!-- End of About Us Section -->
       <!-- Our Members Section -->
-      <section class="bg-[#F4F4F4]">
+      <section class="bg-[#F4F4F4] px-8">
         <!-- Our Members Section -->
         <div
           class="bg-white container mx-auto p-6 rounded-3xl lg:p-8 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
@@ -358,7 +366,7 @@
       <!--End of Our Members Section -->
       <!-- Work Prosses Section -->
       <section
-        class="bg-[#F4F4F4] rounded-lg px-5 md:py-20 md:px-10 lg:mb-[40px]"
+        class="bg-[#F4F4F4] px-5 rounded-lg md:py-20 md:px-10 lg:mb-[40px]"
       >
         <div class="container mx-auto">
           <div class="text-center">
@@ -371,17 +379,21 @@
             <h3 class="text-2xl font-bold text-center sm:text-4xl">
               Our Works Process
             </h3>
-            <p class="text-text-cl2 text-center">
-              The barn house captivates with its blend of rustic charm and
-              modern sophistication, featuring weathered wood, sleek metal
-              accents.
+            <p class="text-text-cl2 text-center px-3 lg:px-32">
+              Our work process is a collaborative journey from concept to
+              completion. We begin by understanding your vision, needs, and
+              goals, ensuring every detail aligns with your expectations. Our
+              team then develops a tailored design plan, incorporating
+              innovative solutions and meticulous attention to detail.
             </p>
           </div>
         </div>
         <!-- Work Card section -->
         <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           <!-- Firts work card -->
-          <div class="bg-bg-concept rounded-lg p-6">
+          <div
+            class="bg-bg-concept rounded-lg p-6 hover:-translate-y-2 transition-all ease-in-out duration-300 cursor-pointer"
+          >
             <img class="w-12 mb-3" src="./assets/concept.png" alt="" />
 
             <div class="space-y-3">
@@ -394,7 +406,9 @@
           </div>
           <!-- End of first work card -->
           <!-- Second work card -->
-          <div class="bg-bg-Design-Process rounded-lg p-6">
+          <div
+            class="bg-bg-Design-Process rounded-lg p-6 hover:-translate-y-2 transition-all ease-in-out duration-300 cursor-pointer"
+          >
             <img class="w-12 mb-3" src="./assets/flow-chart.png" alt="" />
 
             <div class="space-y-3">
@@ -407,7 +421,9 @@
           </div>
           <!-- End of Second work card -->
           <!-- Third work card -->
-          <div class="bg-bg-supervision rounded-lg p-6">
+          <div
+            class="bg-bg-supervision rounded-lg p-6 hover:-translate-y-2 transition-all ease-in-out duration-300 cursor-pointer"
+          >
             <img class="w-12 mb-3" src="./assets/vision.png" alt="" />
 
             <div class="space-y-3">
@@ -420,7 +436,9 @@
           </div>
           <!-- End of Third work card -->
           <!-- Fourth work card -->
-          <div class="bg-bgc-Budget-Planning rounded-lg p-6">
+          <div
+            class="bg-bgc-Budget-Planning rounded-lg p-6 hover:-translate-y-2 transition-all ease-in-out duration-300 cursor-pointer"
+          >
             <img class="w-12 mb-3" src="./assets/budget-planning.png" alt="" />
 
             <div class="space-y-3">
@@ -452,103 +470,107 @@
           <h3 class="text-center font-bold text-2xl lg:text-[40px]">
             Our Latest Portfolio
           </h3>
-          <p class="text-center text-text-cl2">
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents.
+          <p class="text-center text-text-cl2 px-3 lg:px-32">
+            Explore our latest portfolio to see a curated selection of our most
+            recent projects, showcasing our commitment to excellence in design
+            and craftsmanship. From modern commercial spaces to cozy residential
+            retreats, each project reflects our dedication to creating
+            environments that are both functional and beautiful.
           </p>
         </div>
         <!-- Portpholio grid Card  -->
-        <div class="mt-6 grid grid-cols-1 gap-5">
+        <div class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-12">
           <!-- top card -->
+          <!-- <div class=""> -->
+          <!-- Grid card 1 -->
           <div
-            class="lg:flex lg:gap-5 space-y-5 md:grid md:grid-cols-2 md:gap-5 lg:space-y-0"
+            class="p-6 border rounded-lg md:col-span-12 lg:col-span-9 md:flex md:gap-4 md:items-center space-y-4 sm:space-y-0"
           >
-            <!-- Grid card 1 -->
-            <div
-              class="space-y-3 p-6 border rounded-lg md:flex md:flex-row md:gap-6 md:items-center md:py-2 md:px-6 lg:p-6 md:col-span-2"
-            >
+            <div class="space-y-4 sm:space-y-0">
+              <img class="w-full object-cover" src="./assets/img1.png" alt="" />
+            </div>
+            <div class="space-y-4 sm:space-y-0">
               <div class="">
-                <img class="w-full" src="./assets/img1.png" alt="" />
+                <h3 class="font-extrabold text-text-clr2 text-xl md:text-2xl">
+                  Commercial
+                </h3>
+                <p class="font-medium text-text-clr">
+                  Our commercial projects are designed to enhance productivity
+                  and elevate the customer experience, combining innovative
+                  design with practical solutions.
+                </p>
               </div>
-              <div class="">
-                <div class="space-y-3">
-                  <h3 class="font-extrabold text-text-clr2 text-xl md:text-2xl">
-                    Commercial
-                  </h3>
-                  <p class="font-medium text-text-clr">
-                    The barn house captivates with its blend of rustic charm and
-                    modern. The barn house captivates with its blend of rustic
-                    charm and modern .
-                  </p>
-                </div>
-                <div class="space-x-2">
-                  <a class="font-extrabold flex items-center gap-2" href="#"
-                    >View Details
-                    <span class=""
-                      ><i
-                        class="fa-solid fa-arrow-right bg-btn-primary w-8 h-8 flex items-center justify-center rounded-full -rotate-45"
-                      ></i></span
-                  ></a>
-                </div>
+              <div class="space-x-2">
+                <a class="font-extrabold flex items-center gap-2" href="#"
+                  >View Details
+                  <span class=""
+                    ><i
+                      class="fa-solid fa-arrow-right bg-btn-primary w-8 h-8 flex items-center justify-center rounded-full -rotate-45"
+                    ></i></span
+                ></a>
               </div>
             </div>
-            <!--End of Grid card 1 -->
-            <!-- Grid card 2 -->
-            <div class="p-6 border rounded-lg">
-              <img class="w-full h-full" src="./assets/img2.png" alt="" />
-            </div>
-            <!--End of Grid card 2 -->
-            <!-- Grid card 3 -->
-            <div class="p-6 border rounded-lg lg:hidden">
-              <img class="w-full" src="./assets/img5.png" alt="" />
-            </div>
-            <!--End of Grid card 3 -->
           </div>
+          <!--End of Grid card 1 -->
+          <!-- Grid card 2 -->
+          <div class="p-6 border rounded-lg md:col-span-5 lg:col-span-3">
+            <img class="w-full" src="./assets/img2.png" alt="" />
+          </div>
+          <!--End of Grid card 2 -->
+          <!-- Grid card 3 -->
+          <div
+            class="p-6 border rounded-lg md:col-span-7 lg:hidden lg:col-span-2"
+          >
+            <img class="w-full" src="./assets/img5.png" alt="" />
+          </div>
+          <!--End of Grid card 3 -->
+          <!-- </div> -->
           <!-- End of top card -->
           <!-- Bottom Card -->
+          <!-- <div class=""> -->
+          <!-- Grid card 4 -->
           <div
-            class="lg:flex lg:gap-5 space-y-5 lg:space-y-0 md:grid md:grid-cols-2 md:gap-5"
+            class="p-6 border rounded-lg md:col-span-12 lg:col-span-8 md:flex md:items-center md:gap-4 lg:order-1 space-y-4 sm:space-y-0"
           >
-            <!-- Grid card 4 -->
-            <div
-              class="space-y-3 p-6 border rounded-lg md:flex md:flex-row md:items-center md:gap-6 lg:order-1 md:col-span-2"
-            >
-              <div>
-                <img class="w-full" src="./assets/img4.png" alt="" />
+            <div>
+              <img class="w-full object-cover" src="./assets/img4.png" alt="" />
+            </div>
+            <div class="space-y-4 sm:space-y-0">
+              <div class="space-y-4 sm:space-y-0">
+                <h3 class="font-extrabold text-text-clr2 text-xl md:text-2xl">
+                  Commercial
+                </h3>
+                <p class="font-medium text-text-clr">
+                  Our commercial projects are designed to enhance productivity
+                  and elevate the customer experience, combining innovative
+                  design with practical solutions.
+                </p>
               </div>
-              <div class="space-y-3">
-                <div class="space-y-4">
-                  <h3 class="font-extrabold text-text-clr2 text-xl md:text-2xl">
-                    Commercial
-                  </h3>
-                  <p class="font-medium text-text-clr">
-                    The barn house captivates with its blend of rustic charm and
-                    modern.
-                  </p>
-                </div>
-                <div class="space-x-2">
-                  <a class="font-extrabold flex items-center gap-2" href="#"
-                    >View Details
-                    <span class=""
-                      ><i
-                        class="fa-solid fa-arrow-right bg-btn-primary w-8 h-8 flex items-center justify-center rounded-full -rotate-45"
-                      ></i></span
-                  ></a>
-                </div>
+              <div class="space-x-2">
+                <a class="font-extrabold flex items-center gap-2" href="#"
+                  >View Details
+                  <span class=""
+                    ><i
+                      class="fa-solid fa-arrow-right bg-btn-primary w-8 h-8 flex items-center justify-center rounded-full -rotate-45"
+                    ></i></span
+                ></a>
               </div>
             </div>
-            <!--End of Grid card 4 -->
-            <!-- Grid card 5 -->
-            <div class="p-6 border rounded-lg">
-              <img class="w-full" src="./assets/img3.png" alt="" />
-            </div>
-            <!--End of Grid card 5 -->
-            <!-- Grid card 6 -->
-            <div class="p-6 border rounded-lg lg:order-1">
-              <img class="w-full" src="./assets/img5.png" alt="" />
-            </div>
-            <!--End of Grid card 6 -->
           </div>
+          <!--End of Grid card 4 -->
+          <!-- Grid card 5 -->
+          <div
+            class="p-6 border rounded-lg md:col-span-7 lg:col-span-2 lg:order-2"
+          >
+            <img class="w-full object-cover" src="./assets/img3.png" alt="" />
+          </div>
+          <!--End of Grid card 5 -->
+          <!-- Grid card 6 -->
+          <div class="p-6 border rounded-lg md:col-span-5 lg:col-span-2">
+            <img class="w-full object-cover" src="./assets/img5.png" alt="" />
+          </div>
+          <!--End of Grid card 6 -->
+          <!-- </div> -->
           <!-- ENd of bottom card -->
         </div>
         <!-- Portpholio grid Card  -->
@@ -570,10 +592,12 @@
             <h3 class="text-center font-extrabold text-2xl px-10 md:text-4xl">
               Meet Our Trustable Agents Team
             </h3>
-            <p class="text-text-clr font-medium text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              aperiam nulla quas nostrum commodi error nemo sapiente delectus
-              aut excepturi!
+            <p class="text-text-clr font-medium text-center px-2 lg:px-32">
+              Our trustable agents team is dedicated to guiding you through
+              every step of your real estate journey with professionalism and
+              integrity. Each agent brings a wealth of experience, local market
+              knowledge, and a commitment to personalized service, ensuring your
+              needs are met with care and expertise.
             </p>
           </div>
           <!-- Agent Images -->
@@ -586,7 +610,7 @@
             >
               <img class="rounded-lg" src="./assets/Professional1.jpg" alt="" />
               <div
-                class="info-box space-y-2 absolute bottom-6 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
+                class="agent-photo space-y-2 absolute bottom-6 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
               >
                 <div>
                   <h1 class="font-bold text-black text-xl">Ethan Harper</h1>
@@ -605,7 +629,7 @@
             >
               <img class="rounded-xl" src="./assets/Professional2.jpg" alt="" />
               <div
-                class="info-box space-y-2 absolute bottom-6 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
+                class="agent-photo space-y-2 absolute bottom-6 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
               >
                 <div>
                   <h1 class="font-bold text-black text-xl">Olivia Mitchell</h1>
@@ -626,7 +650,7 @@
             >
               <img class="rounded-xl" src="./assets/professional3.jpg" alt="" />
               <div
-                class="info-box space-y-2 absolute bottom-6 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
+                class="agent-photo space-y-2 absolute bottom-6 border w-[90%] md:w-[90%] flex md:flex-row items-center justify-between px-2 py-4 rounded-lg bg-slate-100"
               >
                 <div>
                   <h1 class="font-bold text-black text-xl">Mason Scott</h1>
@@ -665,8 +689,10 @@
             Let’s Discuss Next Project
           </h3>
           <p class="text-center font-medium text-text-cl2">
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents.
+            Ready to bring your vision to life? Let's discuss your next project
+            and explore how we can turn your ideas into reality. Our team is
+            eager to hear your thoughts, understand your goals, and provide
+            expert guidance to ensure a successful outcome.
           </p>
         </div>
         <!-- Input Form -->
@@ -728,9 +754,14 @@
             >
           </button>
         </div>
-        <p class="text-text-clr text-center mt-5">
-          The barn house captivates with its blend of rustic charm and modern
-          sophistication, featuring weathered wood, sleek metal accents.
+        <p class="text-text-clr text-center mt-5 lg:px-36">
+          At Rinterio, we believe that great design transforms spaces and
+          enriches lives. Our passion for creating thoughtfully crafted
+          environments drives us to deliver exceptional results on every
+          project. Whether it’s residential, commercial, or a custom solution,
+          we are committed to excellence, innovation, and client satisfaction.
+          Thank you for choosing Rinterio—we look forward to building something
+          beautiful with you.
         </p>
         <!-- Footer logo -->
         <!-- footer items -->
