@@ -228,7 +228,7 @@
         <!-- <div class="hero"> -->
         <div class="container mx-auto">
           <div
-            class="flex flex-col-reverse gap-9 md:flex-col-reverse lg:flex-row-reverse"
+            class="flex flex-col-reverse gap-9 md:flex-col-reverse md:items-center lg:flex-row-reverse"
           >
             <!-- About Images -->
             <div class="flex-1">
@@ -455,7 +455,7 @@
       </section>
       <!-- End of Work Prosses Section -->
       <!-- Portpholio Section -->
-      <section class="container mx-auto mt-5 px-5">
+      <section class="container mx-auto mt-5 px-5 sm:px-0 hidden">
         <!-- Portpholio BTN -->
         <div class="text-center mb-4">
           <button class="btn btn-ghost bg-sub-btn-clr rounded-full px-4 py-2">
@@ -479,15 +479,13 @@
           </p>
         </div>
         <!-- Portpholio grid Card  -->
-        <div class="mt-6 grid grid-cols-1 gap-5 lg:grid-cols-12">
-          <!-- top card -->
-          <!-- <div class=""> -->
+        <div class="mt-6 grid grid-cols-1 gap-5 md:grid-col-8 lg:grid-cols-8">
           <!-- Grid card 1 -->
           <div
-            class="p-6 border rounded-lg md:col-span-12 lg:col-span-9 md:flex md:gap-4 md:items-center space-y-4 sm:space-y-0"
+            class="p-6 border rounded-lg md:col-span-8 lg:col-span-5 md:grid md:grid-cols-2 md:items-center md:gap-4 space-y-4 sm:space-y-0"
           >
-            <div class="space-y-4 sm:space-y-0">
-              <img class="w-full object-cover" src="./assets/img1.png" alt="" />
+            <div class="">
+              <img class="w-full" src="./assets/img1.png" alt="" />
             </div>
             <div class="space-y-4 sm:space-y-0">
               <div class="">
@@ -513,27 +511,34 @@
           </div>
           <!--End of Grid card 1 -->
           <!-- Grid card 2 -->
-          <div class="p-6 border rounded-lg md:col-span-5 lg:col-span-3">
-            <img class="w-full" src="./assets/img2.png" alt="" />
+          <div class="p-6 border rounded-lg md:col-span-4 lg:col-span-3">
+            <img
+              class="rounded-lg w-full h-full object-cover"
+              src="./assets/img2.png"
+              alt=""
+            />
           </div>
           <!--End of Grid card 2 -->
           <!-- Grid card 3 -->
-          <div
-            class="p-6 border rounded-lg md:col-span-7 lg:hidden lg:col-span-2"
-          >
-            <img class="w-full" src="./assets/img5.png" alt="" />
+          <div class="p-6 border rounded-lg md:col-span-4 lg:col-span-2">
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/Rectangle 2.png"
+              alt=""
+            />
           </div>
           <!--End of Grid card 3 -->
-          <!-- </div> -->
-          <!-- End of top card -->
-          <!-- Bottom Card -->
-          <!-- <div class=""> -->
+
           <!-- Grid card 4 -->
           <div
-            class="p-6 border rounded-lg md:col-span-12 lg:col-span-8 md:flex md:items-center md:gap-4 lg:order-1 space-y-4 sm:space-y-0"
+            class="p-6 border rounded-lg md:col-span-8 lg:col-span-4 md:grid md:grid-cols-2 md:items-center md:justify-center md:gap-4 space-y-4 sm:space-y-0"
           >
             <div>
-              <img class="w-full object-cover" src="./assets/img4.png" alt="" />
+              <img
+                class="w-full h-full object-cover rounded-lg"
+                src="./assets/img4.png"
+                alt=""
+              />
             </div>
             <div class="space-y-4 sm:space-y-0">
               <div class="space-y-4 sm:space-y-0">
@@ -559,15 +564,21 @@
           </div>
           <!--End of Grid card 4 -->
           <!-- Grid card 5 -->
-          <div
-            class="p-6 border rounded-lg md:col-span-7 lg:col-span-2 lg:order-2"
-          >
-            <img class="w-full object-cover" src="./assets/img3.png" alt="" />
+          <div class="p-6 border rounded-lg md:col-span-4 lg:col-span-2">
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/Rectangle 3.png"
+              alt=""
+            />
           </div>
           <!--End of Grid card 5 -->
           <!-- Grid card 6 -->
-          <div class="p-6 border rounded-lg md:col-span-5 lg:col-span-2">
-            <img class="w-full object-cover" src="./assets/img5.png" alt="" />
+          <div class="p-6 border rounded-lg md:col-span-4 lg:hidden">
+            <img
+              class="w-full h-full object-cover rounded-lg"
+              src="./assets/Rectangle 2.png"
+              alt=""
+            />
           </div>
           <!--End of Grid card 6 -->
           <!-- </div> -->
@@ -575,7 +586,135 @@
         </div>
         <!-- Portpholio grid Card  -->
       </section>
+      <section class="container mx-auto mt-5 px-5 sm:px-0">
+        <!-- Portpholio BTN -->
+        <div class="text-center mb-4">
+          <button class="btn btn-ghost bg-sub-btn-clr rounded-full px-4 py-2">
+            <i class="fa-solid fa-arrow-right"></i
+            ><span class="font-bold text-text-clr-2"
+              >Explore our Latest works</span
+            >
+          </button>
+        </div>
+        <!-- Heading of portpholio -->
+        <div class="space-y-6">
+          <h3 class="text-center font-bold text-2xl lg:text-[40px]">
+            Our Latest Portfolio
+          </h3>
+          <p class="text-center text-text-cl2 px-3 lg:px-32">
+            Explore our latest portfolio to see a curated selection of our most
+            recent projects, showcasing our commitment to excellence in design
+            and craftsmanship. From modern commercial spaces to cozy residential
+            retreats, each project reflects our dedication to creating
+            environments that are both functional and beautiful.
+          </p>
+        </div>
+        <!-- Portpholio grid Card  -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-8 gap-6 lg:grid-cols-8">
+          <!-- Grid card 1 -->
+          <div
+            class="p-6 border rounded-lg md:col-span-8 lg:col-span-5 md:grid md:grid-cols-2 md:items-center md:gap-4 space-y-4 sm:space-y-0"
+          >
+            <div class="">
+              <img class="w-full" src="./assets/img1.png" alt="" />
+            </div>
+            <div class="space-y-5">
+              <div class="space-y-4">
+                <h3 class="font-extrabold text-text-clr2 text-xl md:text-2xl">
+                  Commercial
+                </h3>
+                <p class="font-medium text-text-clr">
+                  Our commercial projects are designed to enhance productivity
+                  and elevate the customer experience, combining innovative
+                  design with practical solutions.
+                </p>
+              </div>
+              <div class="space-x-2">
+                <a class="font-extrabold flex items-center gap-2" href="#"
+                  >View Details
+                  <span class=""
+                    ><i
+                      class="fa-solid fa-arrow-right bg-btn-primary w-8 h-8 flex items-center justify-center rounded-full -rotate-45"
+                    ></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--End of Grid card 1 -->
+          <!-- Grid card 2 -->
+          <div class="p-6 border rounded-lg md:col-span-4 lg:col-span-3">
+            <img class="w-full h-full" src="./assets/img2.png" alt="" />
+          </div>
+          <!--End of Grid card 2 -->
+          <!-- Grid card 3 -->
+          <div class="p-6 border rounded-lg md:col-span-4 lg:col-span-2">
+            <img
+              class="w-full h-full rounded-lg"
+              src="./assets/Rectangle 2.png"
+              alt=""
+            />
+          </div>
+          <!--End of Grid card 3 -->
+
+          <!-- Grid card 4 -->
+          <div
+            class="p-6 border rounded-lg md:col-span-8 lg:col-span-4 md:grid md:grid-cols-2 md:items-center md:justify-center md:gap-4 space-y-4 sm:space-y-0"
+          >
+            <div>
+              <img
+                class="w-full lg:h-full xl:h-full rounded-lg"
+                src="./assets/img4.png"
+                alt=""
+              />
+            </div>
+            <div class="space-y-4">
+              <div class="space-y-4">
+                <h3 class="font-extrabold text-text-clr2 text-xl md:text-2xl">
+                  Commercial
+                </h3>
+                <p class="font-medium text-text-clr">
+                  Our commercial projects are designed to enhance productivity
+                  and elevate the customer experience.
+                </p>
+              </div>
+              <div class="space-x-2 md:space-y-3">
+                <a class="font-extrabold flex items-center gap-2" href="#"
+                  >View Details
+                  <span class=""
+                    ><i
+                      class="fa-solid fa-arrow-right bg-btn-primary w-8 h-8 flex items-center justify-center rounded-full -rotate-45"
+                    ></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!--End of Grid card 4 -->
+          <!-- Grid card 5 -->
+          <div class="p-6 border rounded-lg md:col-span-4 lg:col-span-2">
+            <img
+              class="w-full h-full rounded-lg"
+              src="./assets/Rectangle 3.png"
+              alt=""
+            />
+          </div>
+          <!--End of Grid card 5 -->
+          <!-- Grid card 6 -->
+          <div class="p-6 border rounded-lg md:col-span-4 lg:hidden">
+            <img
+              class="w-full h-full rounded-lg"
+              src="./assets/Rectangle 2.png"
+              alt=""
+            />
+          </div>
+          <!--End of Grid card 6 -->
+          <!-- </div> -->
+          <!-- ENd of bottom card -->
+        </div>
+        <!-- Portpholio grid Card  -->
+            
+      </section>
       <!--End of Portpholio Section -->
+
       <!-- My Creative Section -->
       <section class="bg-[#F4F4F4] my-10 py-10 px-5">
         <div class="container mx-auto">
